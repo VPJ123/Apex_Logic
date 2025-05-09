@@ -17,4 +17,3 @@ This Apex trigger updates the `Total_Spend__c` field on the `Supplier__c` object
 
 ## Notes
 - Built in a Trailhead Hands-On Org from scratch.
-- Designed for easy demonstration in a portfolio or interview setting.
