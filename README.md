@@ -10,29 +10,29 @@ It runs on the following DML actions: **insert**, **update**, and **delete**.
 
 ## Objects, Fields, and App
 
-### `Supplier__c`
-- `Total_Spend_for_Current_Year__c` (Currency)
+### Obejct: Supplier__c
+- Field: Total_Spend_for_Current_Year__c *(Currency)*
 
-### `Spend__c`
-- `Spend_Amount__c` (Currency)
-- `Supplier__c` (Lookup to Supplier)
-- `Spend_Date__c` (Date)
+### Object: Spend__c
+- Field: Spend_Amount__c *(Currency)*
+- Field: Supplier__c *(Lookup to Supplier)*
+- Field: Spend_Date__c *(Date)*
 
-### App: *Supplier Spend Tracker*
-- Includes tabs for both custom objects for visibility in the App Launcher
+### App: Supplier Spend Tracker
+- Added 2 tabs respectively one for each custom object that displays in the app launcher
 
 ---
 
 ## Files
 
-### `UpdateSupplierTotalSpend.trigger`
-- This trigger calls a handler to update each `Supplier__c` record’s current year total spend whenever a related `Spend__c` record is inserted, updated, or deleted.
+### UpdateSupplierTotalSpend.trigger
+- This is the trigger that calls a handler to update each 'Supplier__c' record's current year total spend whenever a related 'Spend_Amount__c' record is inserted, updated, or deleted.
 
-### `SupplierSpendHandler.cls`
-- The handler class aggregates current-year `Spend_Amount__c` values and updates the corresponding supplier's `Total_Spend_for_Current_Year__c` field.
+### SupplierSpendHandler.cls
+- This is the handler class that aggregates current-year 'Spend_Amount__c' and updates each supplier's 'Total_Spend_for_Current_Year__c' field accordingly.
 
-### `TestUpdateSupplierTotalSpend.cls`
-- The test class verifies that the trigger correctly calculates and updates a supplier’s current year total spend on insert, update, and delete operations.
+### TestUpdateSupplierTotalSpend.cls
+- This is the test class that verifies the trigger correctly calculates and updates a supplier’s current year total spend.
 
 ---
 
