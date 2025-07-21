@@ -25,13 +25,13 @@ It runs on the following DML actions: **insert**, **update**, and **delete**.
 
 ## Files
 
-### UpdateSupplierTotalSpend.trigger
-- This is the trigger that calls a handler to update each 'Supplier__c' record's current year total spend whenever a related 'Spend_Amount__c' record is inserted, updated, or deleted.
+### `UpdateSupplierTotalSpend.trigger`
+- This is the trigger that calls a handler to update each `Supplier__c` record's current year total spend whenever a related `Spend_Amount__c` record is inserted, updated, or deleted.
 
-### SupplierSpendHandler.cls
-- This is the handler class that aggregates current-year 'Spend_Amount__c' and updates each supplier's 'Total_Spend_for_Current_Year__c' field accordingly.
+### `SupplierSpendHandler.cls`
+- This is the handler class that aggregates current-year `Spend_Amount__c` and updates each supplier's `Total_Spend_for_Current_Year__c` field accordingly.
 
-### TestUpdateSupplierTotalSpend.cls
+### `TestUpdateSupplierTotalSpend.cls`
 - This is the test class that verifies the trigger correctly calculates and updates a supplier’s current year total spend.
 
 ---
