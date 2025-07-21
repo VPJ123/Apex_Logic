@@ -4,14 +4,14 @@ The trigger contains logic to filter and aggregate spend only for specifically t
 The trigger occurs on any of following DML actions: insert, update, or delete.  
   
 # Objects, Fields, and Apps Created:  
-•	Object: Supplier__c  
-o	Field: Total_Spend_for_Current_Year__c (Currency)  
-•	Object: Spend__c  
-o	Field: Spend_Amount__c (Currency)  
-o	Supplier__c (Lookup to Supplier)  
-o	Spend_Date__c (Date)  
-•	App: Supplier Spend Tracker  
-o	Added 2 tabs respectively one for each custom object that displays in the app launcher  
+•	**Object:** Supplier__c  
+  o	Field: Total_Spend_for_Current_Year__c (Currency)  
+•	**Object:** Spend__c  
+  o	Field: Spend_Amount__c (Currency)  
+  o	Supplier__c (Lookup to Supplier)  
+  o	Spend_Date__c (Date)  
+•	**App:** Supplier Spend Tracker  
+  o	Added 2 tabs respectively one for each custom object that displays in the app launcher  
   
 # Files  
 •	UpdateSupplierTotalSpend.trigger  
